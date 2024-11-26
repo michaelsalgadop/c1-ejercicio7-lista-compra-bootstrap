@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>C1-EJERCICIO-7-LISTA-COMPRA - Lista</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <header class="cabecera row align-items-center">
+        <h1 class="col-7">Lista de la compra</h1>
+        <nav class="col-5">
+          <ul class="list-inline text-right">
+            <li class="list-inline-item list-unstyled">
+              <a href="./index.html">Principal</a>
+            </li>
+            <li class="list-inline-item list-unstyled">
+              <a href="./lista.html"><span class="font-bold">Lista</span></a>
+            </li>
+            <li class="list-inline-item list-unstyled">Acerca de</li>
+          </ul>
+        </nav>
+      </header>
+      <section
+        class="seccion-compras row justify-content-between align-items-center"
+      >
+        <i class="icono fas fa-plus-circle col"></i>
+        <p class="numero-articulos col text-right">2/3 comprados</p>
+      </section>
+      <main class="contenido row">
+        <ul class="lista-articulos col-12">
+          <li class="linea-articulo row align-items-center">
+            <div class="check-contenedor col">
+              <input
+                type="checkbox"
+                class="checkbox-articulo"
+                name="articulo_1"
+                id="articulo_1"
+              />
+            </div>
+            <span class="nombre-articulo tachado col">Pan</span>
+            <span class="importe-articulo col">0.75€</span>
+            <i class="fas fa-times icono col"></i>
+          </li>
+          <li class="linea-articulo row align-items-center">
+            <div class="check-contenedor col">
+              <input
+                type="checkbox"
+                class="checkbox-articulo"
+                name="articulo_2"
+                id="articulo_2"
+              />
+            </div>
+
+            <span class="nombre-articulo col">Azúcar</span>
+            <i class="fas fa-times icono col"></i>
+          </li>
+          <li class="linea-articulo row align-items-center">
+            <div class="check-contenedor col">
+              <input
+                type="checkbox"
+                class="checkbox-articulo"
+                name="articulo_3"
+                id="articulo_3"
+              />
+            </div>
+            <span class="nombre-articulo tachado col">Leche</span>
+            <span class="importe-articulo col">1.20€</span>
+            <i class="fas fa-times icono col"></i>
+          </li>
+        </ul>
+        <hr />
+        <p class="total-lista-compra col-12">1.95€</p>
+      </main>
+    </div>
+  </body>
+</html>

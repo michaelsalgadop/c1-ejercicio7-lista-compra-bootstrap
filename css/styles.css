@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+/*ROOT*/
+:root {
+  --color-cabecera: #5e81d1;
+  --color-seccion-compras: #f87500;
+  --color-cuerpo-web: #ff8d27;
+  --color-texto: #212529;
+  --color-seccion-compras-hover: #c16b1e;
+  --fuente-web: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+/*RESETEADORES*/
+body {
+  font-family: var(--fuente-web);
+  background-color: var(--color-cuerpo-web);
+}
+body,
+a {
+  color: var(--color-texto);
+}
+body,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+h1,
+h2,
+h3 {
+  font-weight: 500;
+}
+ul,
+li {
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/*Clases no asociadas, generales*/
+.font-bold {
+  font-weight: bold;
+}
+/*Cabecera, seccion de comprados y contenido general*/
+.contenido {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.cabecera {
+  background-color: var(--color-cabecera);
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.seccion-compras {
+  background-color: var(--color-seccion-compras);
+  box-shadow: inset 0 -2px 2px rgba(0, 0, 0, 0.15);
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.seccion-compras .icono {
+  font-size: 46px;
+}
+.seccion-compras .numero-articulos {
+  font-size: 30px;
+}
+.label-formulario {
+  display: block;
+}
+.moneda {
+  margin-left: 10px;
+}
+.titulo-seccion {
+  margin-bottom: 20px;
+}
+.input-precio {
+  width: calc(100% - 20px);
+  display: inline-block;
+}
+.btn-formulario {
+  font-size: 17px;
+  background-color: var(--color-cabecera);
+}
+.lista-articulos {
+  line-height: 30px;
+}
+.linea-articulo {
+  font-size: 20px;
+}
+.lista-articulos .linea-articulo:hover {
+  background-color: var(--color-seccion-compras-hover);
+  color: #fff;
+}
+.lista-articulos .check-contenedor {
+  flex: 0 20px;
+}
+.lista-articulos .importe-articulo {
+  flex: 0 105px;
+}
+.checkbox-articulo {
+  width: 20px;
+  height: 20px;
+  border: 0;
+  outline: none;
+  margin-right: 10px;
+}
+.linea-articulo .icono {
+  margin-left: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  flex: 0 60px;
+}
+.nombre-articulo.tachado {
+  text-decoration: line-through;
+}
+.total-lista-compra {
+  text-align: right;
+  font-size: 26px;
+}
